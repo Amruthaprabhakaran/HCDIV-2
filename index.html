@@ -1,0 +1,152 @@
+<!-- This assignment is submitted by Amrutha Prabhakaran (1009609) for HCDIV-Assignment-2 2024-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Visualization Critique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .chart-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            font-weight: bold;
+            font-size: 1.4em;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #003366;
+        }
+        .image {
+            width: 100%;
+            text-align: center;
+            margin: 15px 0;
+        }
+        .image img {
+            max-width: 600px; /* Fixed size for both images */
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .analysis-section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .analysis {
+            width: 48%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+        
+        .critical-analysis {
+            background-color: #f3f5fe; 
+        }
+        
+        .suggested-improvements {
+            background-color: #eeeeee; 
+        }
+        h3 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #333;
+            text-decoration: underline;
+        }
+        p {
+            margin: 5px 0;
+            font-size: 0.95em;
+        }
+        
+        .dark-blue {
+            color: #003366;
+            text-decoration: underline;
+        }
+
+        .data-issues {
+            margin-bottom: 15px; 
+        }
+
+        .idiom-issues {
+            margin-top: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align:center; color:#333; margin-bottom: 30px;">Assignment 2 - Visualization Critique</h1>
+
+        <div class="chart-section">
+            <div class="title">Case 1 - 3D Bar Chart on CpG Island Hypermethylation Profiles</div>
+            <div class="image">
+                <img src="Images/3D-Chart.jpg" alt="3D Bar Chart">
+            </div>
+            <div class="analysis-section">
+                <div class="analysis critical-analysis">
+                    <h3>Critical Analysis</h3>
+                    <p class="dark-blue data-issues"><strong>Data Issues:</strong></p>
+                    <p><strong>Interpretation Challenges:</strong> The 3D effect distorts bar heights, making comparisons difficult.</p>
+                    <p><strong>Visual Overload:</strong> Too much data with minimal differentiation leads to clutter.</p>
+                    
+                    <p class="dark-blue idiom-issues"><strong>Idiom Issues:</strong></p>
+                    <p><strong>Distorted Comparisons:</strong> 3D perspective skews data interpretation.</p>
+                    <p><strong>Unreadable Labels:</strong> Angled axis labels and grid lines hinder readability.</p>
+                </div>
+                <div class="analysis suggested-improvements">
+                    <h3>Suggested Improvements</h3>
+                    <p><strong>Use 2D Visualization:</strong> A 2D bar chart or heatmap will improve clarity.</p>
+                    <p><strong>Simplify Colors:</strong> Limiting color variety will reduce visual complexity.</p>
+                    <p><strong>Enhance Labels:</strong> Clear, aligned labels will make the data easier to interpret.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <div class="title">Case 2 - Customer Support Activity Stacked Bar Chart with Line Graph Overlay</div>
+            <div class="image">
+                <img src="Images/tumblr_o05sm0M2ZQ1sgh0voo1_1280.jpg" alt="Customer Support Activity Chart">
+            </div>
+            <div class="analysis-section">
+                <div class="analysis critical-analysis">
+                    <h3>Critical Analysis</h3>
+                    <p class="dark-blue data-issues"><strong>Data Issues:</strong></p>
+                    <p><strong>Overlapping Data Types:</strong> Combining issues by age group and days open in a stacked bar with a line overlay complicates interpretation.</p>
+                    <p><strong>Inconsistent Scales:</strong> Mixing scales on the y-axis for issues and days open risks confusion.</p>
+                    
+                    <p class="dark-blue idiom-issues"><strong>Idiom Issues:</strong></p>
+                    <p><strong>Visual Overload:</strong> Stacked bars with an overlay line chart reduce readability.</p>
+                    <p><strong>Color Confusion:</strong> Excessive colors make categories hard to distinguish, especially for color-deficient viewers.</p>
+                </div>
+                <div class="analysis suggested-improvements">
+                    <h3>Suggested Improvements</h3>
+                    <p><strong>Separate Metrics:</strong> Splitting the metrics into separate charts would improve clarity.</p>
+                    <p><strong>Clear Grouping:</strong> Using a grouped bar chart would make comparisons between categories easier.</p>
+                    <p><strong>Simplify Colors:</strong> Limiting to a few distinct colors would enhance clarity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
